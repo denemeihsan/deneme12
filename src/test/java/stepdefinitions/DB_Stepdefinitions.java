@@ -20,7 +20,8 @@ public class DB_Stepdefinitions extends Base {
         preparedStatement.setInt(1, id);
         //commit
 
-        resultSet = preparedStatement.executeQuery();
+        resultS
+                et = preparedStatement.executeQuery();
         resultSet.next();
         System.out.println("Database Name Result: " + resultSet.getString("first_name") +
                            "\nDatabase Last Name Result: " + resultSet.getString("last_name"));
