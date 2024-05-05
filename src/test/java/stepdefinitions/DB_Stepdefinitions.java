@@ -19,7 +19,6 @@ public class DB_Stepdefinitions extends Base {
         preparedStatement = DBUtils.getConnection().prepareStatement(queryManage.getQueryUS02Q02());
         preparedStatement.setInt(1, id);
         //commit
-        //yeni commit
         resultSet = preparedStatement.executeQuery();
         resultSet.next();
         System.out.println("Database Name Result: " + resultSet.getString("first_name") +
