@@ -18,6 +18,7 @@ public class DB_Stepdefinitions extends Base {
     public void query02_prepare_and_execute_the_query() throws SQLException {
         preparedStatement = DBUtils.getConnection().prepareStatement(queryManage.getQueryUS02Q02());
         preparedStatement.setInt(1, id);
+        //commit
         resultSet = preparedStatement.executeQuery();
         resultSet.next();
         System.out.println("Database Name Result: " + resultSet.getString("first_name") +
